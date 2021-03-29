@@ -23,7 +23,6 @@ const removeIntervalFromArray = (items, startPoint, boundPoint) => {
 
 const reducer = (items, positions) => {
   return items.reduce((accumulator, [ start, end ]) => {
-    //console.log('remove interval', start, end);
     return removeIntervalFromArray(accumulator, start, end)
   }, positions);
 };
